@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="tw.com.flag.a1031_first_demo.Tab2_mid">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Tab2"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+        <Button
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="readEdit"
+            android:text="Enter"
+            app:layout_constraintTop_toBottomOf="@+id/edit" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear"
+            android:text="clear"
+            android:onClick="clear"
+            app:layout_constraintLeft_toRightOf="@id/read"
+            app:layout_constraintTop_toTopOf="@id/read"/>
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/read" />
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="35dp"
+            android:textColor="#ff0000"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/item1" />
+        <TextView
+            android:id="@+id/item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/item2" />
+        <TextView
+            android:id="@+id/item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/item3" />
+        <TextView
+            android:id="@+id/item5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陳昕吃不飽"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/item4" />
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/sel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fab_bg_mini"
+                />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
